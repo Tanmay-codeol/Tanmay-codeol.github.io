@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanmay's Resume</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
+</head>
+<body>
+<iframe id="pdfViewer" src="https://docs.google.com/viewer?url=https://github.com/Tanmay-codeol/Tanmay-codeol.github.io/raw/b9ac8996c186c3b4bacb6b9c21b0b8ba300bcef5/Tanmay's%20Resume.pdf&embedded=true" frameborder="0"></iframe>
+<script>
+  // Function to make iframe full screen
+  function fullScreen() {
+    var elem = document.getElementById("pdfViewer");
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+  fullScreen(); // Call the function to make the iframe full screen
+</script>
+</body>
+</html>
